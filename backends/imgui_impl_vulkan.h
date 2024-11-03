@@ -54,7 +54,7 @@
 // Vulkan includes
 #ifdef IMGUI_IMPL_VULKAN_USE_RENDERV
 #include <RenderV/Vulkan/vkloader.h>
-#elifdef IMGUI_IMPL_VULKAN_USE_VOLK
+#elif defined(IMGUI_IMPL_VULKAN_USE_VOLK)
 #include <volk.h>
 #else
 #include <vulkan/vulkan.h>
