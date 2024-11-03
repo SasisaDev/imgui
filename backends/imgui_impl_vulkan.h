@@ -52,7 +52,9 @@
 #endif
 
 // Vulkan includes
-#ifdef IMGUI_IMPL_VULKAN_USE_VOLK
+#ifdef IMGUI_IMPL_VULKAN_USE_RENDERV
+#include <RenderV/Vulkan/vkloader.h>
+#elifdef IMGUI_IMPL_VULKAN_USE_VOLK
 #include <volk.h>
 #else
 #include <vulkan/vulkan.h>
